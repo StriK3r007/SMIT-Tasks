@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --blackColor: #000000;
     --whiteColor: #ffffff;
@@ -15,6 +16,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 body {
     background-color: var(--darkGrayColor);
@@ -211,10 +217,15 @@ body {
     justify-content: space-between;
 }
 .franchise-express .franchise-image img {
-    width: 95%;
+    width: 400px;
+    height: 250px;
 }
 .franchise-express .franchise-text {
     align-items: center;
+    margin-top: 20px;
+}
+.franchise-express .franchise-text .franchise-city{
+    font-size: .8rem;
 }
 
 .footer {
